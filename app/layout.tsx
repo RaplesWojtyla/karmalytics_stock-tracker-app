@@ -17,6 +17,12 @@ export const metadata: Metadata = {
 	description: "Pantau harga saham real-time, atur notifikasi harga kustom, dan akses analisa emiten mendalam untuk keputusan investasi yang lebih cerdas.",
 };
 
+/**
+ * Root layout component that sets the document language, theme, and font variables and renders the page content.
+ *
+ * @param children - The content to render inside the layout's body.
+ * @returns The root HTML element containing a body with the configured font CSS variables and `antialiased` class that wraps `children`.
+ */
 export default function RootLayout({
 	children,
 }: Readonly<{

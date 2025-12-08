@@ -71,7 +71,7 @@ export const MARKET_OVERVIEW_WIDGET_CONFIG = {
                 { s: 'NASDAQ:AAPL', d: 'Apple' },
                 { s: 'NASDAQ:GOOGL', d: 'Alphabet' },
                 { s: 'NASDAQ:MSFT', d: 'Microsoft' },
-                { s: 'NASDAQ:FB', d: 'Meta Platforms' },
+                { s: 'NASDAQ:META', d: 'Meta Platforms' },
                 { s: 'NYSE:ORCL', d: 'Oracle Corp' },
                 { s: 'NASDAQ:INTC', d: 'Intel Corp' },
             ],
@@ -111,7 +111,7 @@ export const HEATMAP_WIDGET_CONFIG = {
     hasSymbolTooltip: true,
     isMonoSize: false,
     width: '100%',
-    height: '600',
+    height: 600,
 }
 
 export const TOP_STORIES_WIDGET_CONFIG = {
@@ -122,7 +122,7 @@ export const TOP_STORIES_WIDGET_CONFIG = {
     locale: 'id',
     market: 'stock',
     width: '100%',
-    height: '600',
+    height: 600,
 }
 
 export const MARKET_DATA_WIDGET_CONFIG = {
@@ -152,7 +152,7 @@ export const MARKET_DATA_WIDGET_CONFIG = {
                 { name: 'NASDAQ:AAPL', displayName: 'Apple' },
                 { name: 'NASDAQ:GOOGL', displayName: 'Alphabet' },
                 { name: 'NASDAQ:MSFT', displayName: 'Microsoft' },
-                { name: 'NASDAQ:FB', displayName: 'Meta Platforms' },
+                { name: 'NASDAQ:META', displayName: 'Meta Platforms' },
                 { name: 'NYSE:ORCL', displayName: 'Oracle Corp' },
                 { name: 'NASDAQ:INTC', displayName: 'Intel Corp' },
             ],
@@ -234,7 +234,7 @@ export const BASELINE_WIDGET_CONFIG = (symbol: string) => ({
 export const TECHNICAL_ANALYSIS_WIDGET_CONFIG = (symbol: string) => ({
     symbol: symbol.toUpperCase(),
     colorTheme: 'dark',
-    isTransparent: 'true',
+    isTransparent: true,
     locale: 'id',
     width: '100%',
     height: 400,
@@ -245,7 +245,7 @@ export const TECHNICAL_ANALYSIS_WIDGET_CONFIG = (symbol: string) => ({
 export const COMPANY_PROFILE_WIDGET_CONFIG = (symbol: string) => ({
     symbol: symbol.toUpperCase(),
     colorTheme: 'dark',
-    isTransparent: 'true',
+    isTransparent: true,
     locale: 'id',
     width: '100%',
     height: 440,
@@ -254,7 +254,7 @@ export const COMPANY_PROFILE_WIDGET_CONFIG = (symbol: string) => ({
 export const COMPANY_FINANCIALS_WIDGET_CONFIG = (symbol: string) => ({
     symbol: symbol.toUpperCase(),
     colorTheme: 'dark',
-    isTransparent: 'true',
+    isTransparent: true,
     locale: 'id',
     width: '100%',
     height: 464,

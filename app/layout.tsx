@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
 	title: "Karmalytics",
-	description: "Track real-time stock prices, get personalized alerts and explore detailed company insights.",
+	description: "Pantau harga saham real-time, atur notifikasi harga kustom, dan akses analisa emiten mendalam untuk keputusan investasi yang lebih cerdas.",
 };
 
 export default function RootLayout({
@@ -23,7 +23,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en" className="dark">
+		<html lang="id" className="dark">
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
 			>

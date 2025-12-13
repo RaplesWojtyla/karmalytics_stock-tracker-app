@@ -1,6 +1,6 @@
 'use client'
 
-import FootlerLink from "@/components/forms/FootlerLink"
+import FooterLink from "@/components/forms/FooterLink"
 import InputField from "@/components/forms/InputField"
 import { Button } from "@/components/ui/button"
 import { SubmitHandler, useForm } from "react-hook-form"
@@ -74,7 +74,7 @@ const SignIn = () => {
                     {isSubmitting ? 'Sedang memuat...' : 'Masuk'}
                 </Button>
 
-                <FootlerLink
+                <FooterLink
                     text="Belum memiliki akun?"
                     linkText="Daftar Sekarang"
                     href="/sign-up"

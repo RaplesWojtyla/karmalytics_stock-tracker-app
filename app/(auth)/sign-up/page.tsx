@@ -1,7 +1,7 @@
 'use client'
 
 import CountrySelectField from "@/components/forms/CountrySelectField"
-import FootlerLink from "@/components/forms/FootlerLink"
+import FooterLink from "@/components/forms/FooterLink"
 import InputField from "@/components/forms/InputField"
 import SelectField from "@/components/forms/SelectField"
 import { Button } from "@/components/ui/button"
@@ -137,7 +137,7 @@ const SignUp = () => {
                     { isSubmitting ? 'Sedang Memproses...' : 'Mulai Investasi Sekarang' }
                 </Button>
 
-                <FootlerLink 
+                <FooterLink 
                     text="Sudah memiliki akun?"
                     linkText="Masuk"
                     href="/sign-in"

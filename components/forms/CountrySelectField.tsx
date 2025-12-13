@@ -1,15 +1,15 @@
-import { Controller } from "react-hook-form"
+import { Controller, FieldValues } from "react-hook-form"
 import { Label } from "../ui/label"
 import CountrySelectPopoverCommand from "./CountrySelectPopoverCommand"
 
 
-const CountrySelectField = ({
+const CountrySelectField = <T extends FieldValues>({
     name,
     label,
     control,
     error,
     required = false
-}: CountrySelectProps) => {
+}: CountrySelectProps<T>) => {
     return (
         <div className="space-y-2">
             <Label htmlFor={name} className="form-label">
@@ -17,7 +17,7 @@ const CountrySelectField = ({
             </Label>
 
             <Controller 
-                name={name as "email" | "fullName" | "password" | "country" | "investmentGoals" | "riskTolerance" | "preferredIndustry"}
+                name={name}
                 control={control}
                 rules={{
                     required: required ? `Harap pilih ${label.toLowerCase()}` : false

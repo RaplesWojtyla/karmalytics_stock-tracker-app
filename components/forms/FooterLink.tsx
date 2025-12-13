@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-const FootlerLink = ({
+const FooterLink = ({
     text,
     linkText,
     href
@@ -20,4 +20,4 @@ const FootlerLink = ({
     )
 }
 
-export default FootlerLink
+export default FooterLink
